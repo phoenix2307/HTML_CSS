@@ -1,0 +1,34 @@
+h1 {
+    color: orangered;
+    background-color: black;
+    font-size: -webkit-xxx-large;
+    position: relative;
+    text-align: center;
+    font-family: cursive;
+}
+
+.hi {
+    text-transform: uppercase;
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.test-1 {}
+
+.test-2 {}
+
+.text-standart {
+    color: grey !important;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+mark {
+    color: blue;
+}
+
+#standart {
+    font-style: italic;
+}
