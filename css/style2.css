@@ -1,7 +1,7 @@
 h1 {
     color: orangered;
     background-color: black;
-    font-size: -webkit-xxx-large;
+    font-size: 24px;
     position: relative;
     text-align: center;
     font-family: cursive;
@@ -14,9 +14,13 @@ h1 {
     font-weight: bold;
 }
 
-.test-1 {}
+.test-1 {
+    
+}
 
-.test-2 {}
+.test-2 {
+
+}
 
 .text-standart {
     color: grey !important;
@@ -31,4 +35,14 @@ mark {
 
 #standart {
     font-style: italic;
+}
+
+.wrap-1 {
+    border: 2px solid green;
+    margin: 15px;
+    padding: 15px;
+
+}
+.btn-1, .btn-2 {
+    border: 1px solid black;
 }
