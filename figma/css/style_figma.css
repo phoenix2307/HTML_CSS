@@ -338,7 +338,7 @@ body {
 
 /*Intro styles start*/
 .intro{
-    height: 100vh;
+    min-height: 100vh;
     background: url(../images/intro-bg.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
@@ -358,4 +358,42 @@ body {
     line-height: 24px;
     color: #FFFFFF;
     margin-bottom: 59px;
+}
+.search-form__info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-form__field{
+    width: 297px;
+    background: transparent url(../images/oval.png) no-repeat left 7px;
+    background-size: 20px;
+    border: 0;
+    border-bottom: 2px solid #BFC0C5;
+    margin-right: 60px;
+    padding-left: 43px;
+    padding-bottom: 22px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.search-form__field::placeholder{
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.search-form__submit{
+    padding: 15px 39px;
+    text-transform: uppercase;
+    background: #1B7DFF;
+    color: #FFFFFF;
+    border: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+.search-form__submit:hover, .search-form__submit:active, .search-form__submit:focus{
+    background: #135cbd;
 }
