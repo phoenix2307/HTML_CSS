@@ -520,8 +520,8 @@ img {
 
 
 /*Places start*/
-.places {
-
+.places__title {
+    margin-right: 15px;
 }
 
 .places__caption {
@@ -547,6 +547,50 @@ img {
 .places__view-all:hover, .places__view-all:focus {
     opacity: .65
 }
+
+.places__cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+.places__card{
+    position: relative;
+}
+
+.places__card::after{
+ position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(21, 24, 36, 0.4);
+}
+
+.places__card-title{
+    position: absolute;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    bottom: 27px;
+    left: 29px;
+    z-index: 10;
+}
+
+.places__card_size_large {
+    grid-column: span 3;
+}
+
+.places__card-pic {
+    height: 354px;
+    object-fit: cover;
+    width: 100%;
+}
+
 
 
 /*Places end*/
