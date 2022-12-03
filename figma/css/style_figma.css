@@ -554,12 +554,13 @@ img {
     grid-gap: 10px;
 }
 
-.places__card{
+.places__card {
     position: relative;
+    overflow: hidden;
 }
 
-.places__card::after{
- position: absolute;
+.places__card::after {
+    position: absolute;
     display: block;
     content: '';
     width: 100%;
@@ -570,7 +571,11 @@ img {
     background-color: rgba(21, 24, 36, 0.4);
 }
 
-.places__card-title{
+.places__card:hover .places__card-pic{
+    transform: scale(1.05);
+}
+
+.places__card-title {
     position: absolute;
     font-weight: 700;
     font-size: 50px;
@@ -589,8 +594,8 @@ img {
     height: 354px;
     object-fit: cover;
     width: 100%;
+    transition: .15s;
 }
-
 
 
 /*Places end*/
