@@ -337,6 +337,13 @@ img {
     top: 0;
     left: 0;
     width: 100%;
+    transition: .2s linear;
+    padding-bottom: 25px;
+    z-index: 999;
+}
+
+.header_active{
+    background: #0E1D28;
 }
 
 .header__wrapper {
@@ -771,5 +778,29 @@ img {
     background: #135cbd;
 }
 
-
 /*Top places end*/
+
+/*Videos start*/
+
+.videos{
+    width: 100%;
+}
+.videos__wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.video__item{
+    padding-top: 56.25%;
+}
+
+.video__element{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Videos end*/
