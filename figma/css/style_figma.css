@@ -275,6 +275,11 @@ textarea {
     url('../fonts/lato-v23-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+/*//*/
+/*//*/
+/*//*/
+/*//*/
+
 html {
     box-sizing: border-box;
 }
@@ -521,9 +526,10 @@ img {
 
 /*Places start*/
 
-.places{
+.places {
     margin-bottom: 131px;
 }
+
 .places__title {
     margin-right: 15px;
 }
@@ -575,7 +581,7 @@ img {
     background-color: rgba(21, 24, 36, 0.4);
 }
 
-.places__card:hover .places__card-pic{
+.places__card:hover .places__card-pic {
     transform: scale(1.05);
 }
 
@@ -594,7 +600,7 @@ img {
     grid-column: span 3;
 }
 
-.places__card_size_small{
+.places__card_size_small {
     grid-column: span 2;
 }
 
@@ -603,17 +609,18 @@ img {
     width: 100%;
     transition: .15s;
 }
-.places__card-pic_sz_large{
+
+.places__card-pic_sz_large {
     height: 354px;
     object-fit: cover;
 }
 
-.places__card-pic_sz_small{
+.places__card-pic_sz_small {
     height: 283px;
     object-fit: cover;
 }
 
-.places__card-link{
+.places__card-link {
     position: absolute;
     top: 0;
     left: 0;
@@ -622,5 +629,147 @@ img {
     z-index: 3;
 }
 
-
 /*Places end*/
+
+/*Tours start*/
+
+.tours {
+    margin-bottom: 139px;
+}
+
+.tours__tour {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 108px;
+    align-items: center;
+    margin-bottom: 77px;
+}
+
+.tour__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 85px;
+}
+
+.tour__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 58px;
+}
+
+.tour__more {
+    display: inline-block;
+    padding-right: 59px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #006DFE;
+    text-decoration: none;
+    background: url(../images/arrow-right-ico.svg) no-repeat right center;
+    transition: 0.2s all;
+}
+
+.tour__more:hover, .tour__more:active {
+    opacity: .65;
+}
+
+.tour__info {
+    padding-left: 47px;
+}
+
+/*Tours end*/
+
+/*Top places start*/
+
+.top__places {
+    margin-bottom: 144px;
+}
+
+.top__places-title {
+    margin-bottom: 54px;
+}
+
+.top__places_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 57px;
+}
+
+.top__places_card{
+    display: flex;
+    flex-direction: column;
+}
+
+.top__places_card-pic {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.top__places_card-pic-stats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(21, 24, 36, 0.6);
+    padding: 16px 25px;
+}
+
+.top__places_card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0 auto 0 0;
+}
+
+.top__places_card-likes {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-right: 20px;
+    background: url(../images/top-places/heart-ico.svg) no-repeat right;
+    margin-right: 14px;
+}
+
+.top__places_card-comments {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-right: 23px;
+    background: url(../images/top-places/comments-ico.svg) no-repeat right;
+}
+
+.top__places_card-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 31px;
+}
+
+.top__places_card-see-more {
+    text-decoration: none;
+    background: #006DFE;
+    width: 118px;
+    background-size: 118px 42px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 12px 19px;
+    margin: auto 0 0 0;
+}
+
+.top__places_card-see-more:hover, .top__places_card-see-more:active, .top__places_card-see-more:focus {
+    background: #135cbd;
+}
+
+
+/*Top places end*/
