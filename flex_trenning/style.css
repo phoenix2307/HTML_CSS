@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.box{
+    padding: 10px;
+    font: 900 60px "Roboto", sans-serif;
+    color: #fff;
+    text-align: center;
+    text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    background-color: teal;
+
+}
+
+.main-container {
+    display: flex;
+    background-color: #6b6e77;
+    flex: 1;
+}
+
+@media screen and (max-width: 850px){
+    .main-container{
+        flex-direction: column;
+    }
+
+    .main{
+        order: -1;
+    }
+}
+
+.side-bar {
+    background-color: olive;
+    flex: 1;
+}
+
+.main {
+    background-color: #006DFE;
+    flex: 3;
+}
+
+.footer {
+    background-color: chocolate;
+}
